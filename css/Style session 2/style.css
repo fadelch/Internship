@@ -1,0 +1,39 @@
+h2 {
+  color: red;
+  /*property: value;*/
+  text-decoration: underline;
+}
+button {
+  cursor: pointer;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+}
+button:hover {
+  background-color: darkred;
+}
+button:active {
+  background-color: blue;
+}
+div {
+  color: blue;
+  width: 450px;
+  height: 470px;
+  background-color: lightblue;
+  margin-left: 100px;
+  border: 10px solid blue;
+  /* size type: doted dahsed solid; */
+  padding: 10px;
+  border-radius: 10%;
+}
+/* body {
+  background-color: darkred;
+} */
+.name {
+  color: darkblue;
+  text-decoration: underline;
+  text-transform: capitalize;
+  text-align: center;
+}
