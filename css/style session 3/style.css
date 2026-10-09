@@ -1,0 +1,131 @@
+div {
+  width: 250px;
+  height: 250px;
+  background-color: green;
+  border: 1px solid black;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+div:hover {
+  width: 450px;
+  color: blue;
+}
+
+button:hover {
+  font-size: 25px;
+}
+
+.dv1 {
+  width: 250px;
+  height: 250px;
+  background-color: green;
+  border: 1px solid black;
+}
+
+.dv2 {
+  width: 250px;
+  height: 250px;
+  background-color: blue;
+  border: 1px solid black;
+}
+
+.dv3 {
+  border-radius: 30%;
+}
+
+.dv1 {
+  width: 250px;
+  height: 250px;
+  background-image: url("../images/amur.webp");
+  background-size: cover;
+  margin-left: 150px;
+  margin-top: 100px;
+  margin: auto;
+  margin-bottom: 50px;
+  margin: 50px 30px 30px 50px;
+  margin: 150px;
+}
+
+.dv2 {
+  width: 250px;
+  height: 250px;
+  background-color: blue;
+  border: 1px solid black;
+  text-align: center;
+  margin-top: 50px;
+  float: right;
+  margin-right: 150px;
+  margin: auto;
+  float: right;
+}
+
+.dw {
+  font-size: 20px;
+  margin: auto;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: url("../images/amur.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 2500px;
+  background-attachment: fixed;
+}
+
+#dc {
+  color: blue;
+}
+
+.dw {
+  color: red;
+}
+
+#dc {
+  color: brown;
+}
+
+.parent {
+  width: 80%;
+  background-color: brown;
+  overflow: auto;
+}
+
+.dv1 {
+  width: 30%;
+  float: right;
+  background-color: aqua;
+}
+
+.dv2 {
+  width: 30%;
+  float: left;
+  background-color: blue;
+}
+
+p {
+  display: inline;
+}
+
+.sa {
+  display: block;
+}
