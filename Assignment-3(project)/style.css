@@ -1,0 +1,639 @@
+.Logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 30%;
+}
+.Navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid;
+  background-color: rgb(17, 13, 13);
+  align-items: center;
+  z-index: 1000;
+}
+a {
+  padding: 10px;
+  font-size: 20px;
+  color: red;
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline blue 4px;
+}
+.hero {
+  background-image: url(images/Wall.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.hero-container {
+  text-align: center;
+  color: white;
+}
+h1 {
+  font-size: 100px;
+  text-transform: uppercase;
+}
+.welcome {
+  font-size: xx-large;
+}
+button {
+  padding: 25px 35px;
+  border: 2px solid black;
+  border-radius: 10%;
+}
+button:hover {
+  cursor: pointer;
+  text-align: center;
+}
+.Learn-more-btn {
+  background-color: blue;
+  text-align: center;
+  color: wheat;
+}
+h2 {
+  text-align: center;
+}
+span {
+  text-decoration: underline solid blue 3px;
+}
+
+.body-container {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  width: 90%;
+  margin: auto;
+}
+
+.Card {
+  position: relative;
+  border: 2px solid black;
+  text-align: center;
+  border-radius: 2px;
+  padding: 10px;
+  overflow: hidden;
+}
+.ReadMore {
+  color: blue;
+}
+i {
+  color: hsl(240, 58%, 45%);
+}
+.Card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  right: 0%;
+  bottom: 0;
+  width: 0%;
+  background-color: #272b30;
+  transition: 1s;
+  opacity: 0.9;
+  z-index: 0;
+}
+.Card:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.Card h3 {
+  position: relative;
+  z-index: 1;
+  transition: color 2s;
+}
+.Card:hover h3 {
+  color: white;
+}
+
+.Card p {
+  position: relative;
+  z-index: 1;
+  transition: color 2s;
+}
+.Card:hover p {
+  color: wheat;
+}
+.Card i {
+  position: relative;
+  z-index: 1;
+  transition: color 2s;
+}
+.Card:hover i {
+  color: aqua;
+}
+
+.Card a {
+  position: relative;
+  z-index: 1;
+  transition: color 2s;
+}
+.Card:hover a {
+  color: aqua;
+}
+
+.features-section {
+  text-align: center;
+  font-size: 50px;
+}
+
+.featured-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+  margin: auto;
+  gap: 30px;
+}
+
+.images-containers {
+  width: 80%;
+  position: relative;
+}
+
+.self-pic {
+  width: 100%;
+  height: 100%;
+}
+
+.images-containers::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.image-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.image-caption span {
+  color: #6195ff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.image-caption h3 {
+  color: white;
+  margin: 10px 0;
+}
+
+.buttons a {
+  display: inline-block;
+  background-color: #6195ff;
+  color: white;
+  padding: 10px 12px;
+  margin: 0 3px;
+}
+
+.images-containers:hover::after {
+  opacity: 1;
+}
+
+.images-containers:hover .image-caption {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.section-3 {
+  text-align: center;
+  font-size: xx-large;
+}
+.Offers {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 35px;
+}
+.Card-Offers {
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  height: 130px;
+}
+.app-p {
+  font-size: large;
+  padding-left: 30px;
+}
+.Card-Offers::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 0%;
+  width: 0%;
+  background-color: #272b30;
+  transition: 1s;
+  opacity: 0.9;
+  z-index: 0;
+}
+.Card-Offers:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.Card-Offers strong {
+  position: relative;
+  z-index: 1;
+  transition: color 1s;
+}
+.Card-Offers:hover strong {
+  color: aqua;
+}
+
+.Card-Offers i {
+  position: relative;
+  z-index: 1;
+  transition: color 1s;
+}
+.Card-Offers:hover i {
+  color: aqua;
+}
+.Card-Offers p {
+  position: relative;
+  z-index: 1;
+  transition: color 1s;
+}
+.Card-Offers:hover p {
+  color: wheat;
+}
+.title {
+  font-size: x-large;
+  padding: 10px 2px 3px 4px;
+}
+.title-4 {
+  padding-top: 150px;
+  width: 90%;
+  margin: auto;
+  font-size: xx-large;
+}
+.pic-4 {
+  width: 450px;
+  height: 400px;
+}
+.body-4 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 90%;
+  margin: auto;
+  gap: 45px;
+  padding-bottom: 150px;
+}
+.txt-4 {
+  font-size: xx-large;
+}
+.stats-section {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/tiger.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 250px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.stat {
+  text-align: center;
+  color: white;
+}
+
+.stat i {
+  font-size: 30px;
+  color: #6195ff;
+}
+
+.stat h3 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.stat p {
+  font-size: 16px;
+}
+.section-5 {
+  font-size: xx-large;
+  padding: 100px;
+  text-align: center;
+  font-size: large;
+  color: black;
+  font-size: 45px;
+}
+.sect-5 {
+  text-decoration: none;
+}
+.price-section {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 34px;
+}
+.Card-Price {
+  position: relative;
+  border: 1px solid black;
+  text-align: center;
+  padding: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 45px;
+}
+.Card-Price::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 0%;
+  transition: 1s;
+  background-color: #272b30;
+  opacity: 0.3;
+  z-index: 0;
+}
+.Card-Price:hover::after {
+  height: 100%;
+}
+.circle {
+  width: 90px;
+  height: 90px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.price {
+  font-size: x-large;
+}
+.Card-Price .circle,
+h5 {
+  position: relative;
+  z-index: 1;
+  transition: color 1s;
+}
+.Card-Price:hover .circle,
+h5 {
+  color: red;
+}
+h5 {
+  font-size: larger;
+}
+
+.testimonial-section {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("images/tiger.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 250px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+  padding: 30px;
+}
+
+.testimonial {
+  width: 40%;
+  color: white;
+}
+.pic-6 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.pic-6 img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.person-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.person-info h3 {
+  margin: 0;
+}
+
+.person-info span {
+  color: #6195ff;
+}
+.section-7 {
+  padding: 25px;
+  text-align: center;
+  font-size: 45px;
+}
+.Teams {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 34px;
+  padding: 25px;
+}
+
+.Card-teams {
+  text-align: center;
+  padding: 25px;
+  position: relative;
+  background-color: grey;
+}
+
+.team-image {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+
+.pic-7 {
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+.Social-links {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+  z-index: 2;
+}
+.Social-links:hover {
+  cursor: pointer;
+}
+.Social-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Social-links li {
+  padding: 10px;
+}
+
+.Social-links i {
+  color: #6195ff;
+}
+.Card-teams::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  height: 0%;
+  transition: 1s;
+  background-color: #272b30;
+  opacity: 0.3;
+}
+.Card-teams:hover::after {
+  height: 100%;
+}
+.Card-teams:hover .Social-links {
+  opacity: 1;
+  pointer-events: auto;
+}
+.section-8 {
+  font-size: 45px;
+  text-align: center;
+  padding: 35px;
+}
+.News {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 34px;
+  padding: 25px;
+}
+
+.Card-news {
+  text-align: center;
+  padding: 25px;
+  position: relative;
+}
+.pic-8 {
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+}
+.Card-news:after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  height: 0%;
+  transition: 1s;
+  background-color: #75839c;
+  opacity: 0.4;
+}
+.Card-news:hover::after {
+  height: 100%;
+}
+.Card-news p {
+  font-size: 14px;
+}
+
+.Card-news h3 {
+  font-size: 18px;
+}
+
+.footer {
+  background-color: #25272c;
+  border-radius: 20px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Football field logo */
+.football-field {
+  width: 100px;
+  height: 55px;
+  margin: 0 auto 20px;
+  position: relative;
+
+  background-color: #26752c;
+  border: 5px solid #c6cbd0;
+  box-sizing: border-box;
+}
+
+.football-field::before {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border: 2px solid white;
+}
+
+.football-field::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 50%;
+  border-left: 2px solid white;
+}
+
+/* Social icons */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.footer-social a {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #6195ff;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-social i {
+  color: white;
+  font-size: 16px;
+}
+
+.footer-social a:hover {
+  background-color: #4678df;
+  text-decoration: none;
+}
+.footer-copyright {
+  color: #999;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 25px;
+}
