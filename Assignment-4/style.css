@@ -1,0 +1,76 @@
+.track {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 100px;
+  margin-bottom: 24px;
+  background-color: #e5eaf3;
+  border-radius: 12px;
+}
+.box {
+  position: absolute;
+  top: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  line-height: 60px;
+}
+.box-1 {
+  background: #2563eb;
+  animation: slide 3s linear infinite alternate;
+}
+@keyframes slide {
+  from {
+    left: 0;
+  }
+  to {
+    left: calc(100% - 60px);
+  }
+}
+
+.box-2 {
+  background: #087f5b;
+  animation: slideSpin 3s linear infinite alternate;
+}
+@keyframes slideSpin {
+  from {
+    left: 0;
+    transform: rotate(0deg);
+  }
+  to {
+    left: calc(100% - 60px);
+    transform: rotate(360deg);
+  }
+}
+
+.box-3 {
+  border-radius: 50%;
+  animation: slideColor 3s linear infinite alternate;
+}
+@keyframes slideColor {
+  from {
+    left: calc(100% - 60px);
+    background: #c2410c;
+  }
+  to {
+    left: 0;
+    background: #be123c;
+  }
+}
+.box-4 {
+  background: #7c3aed;
+  animation: slideShape 3s linear infinite alternate;
+}
+@keyframes slideShape {
+  from {
+    left: calc(100% - 60px);
+    border-radius: 8px;
+  }
+  to {
+    left: 0;
+    border-radius: 50%;
+  }
+}
