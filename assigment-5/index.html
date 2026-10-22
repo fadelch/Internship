@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Assignment 4 | CSS Hover Effects</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="page">
+      <header class="heading">
+        <div class="top-line">
+          <span class="brand">HOVER / LAB</span>
+          <span class="assignment">ASSIGNMENT 04</span>
+        </div>
+
+        <h1>CSS hover effects<span class="heading-dot">.</span></h1>
+
+        <p class="intro">
+          Hover over an image to tilt it in 3D. Move away to reset.
+        </p>
+      </header>
+
+      <section class="gallery" aria-label="Four CSS hover effects">
+        <article class="demo">
+          <div class="scene scene-1">
+            <div class="card card-1">
+              <img
+                src="images/tiger.jpg"
+                alt="Snowy alpine mountains reflected in a blue lake"
+              />
+
+              <span class="card-number" aria-hidden="true"> 01 </span>
+            </div>
+          </div>
+
+          <div class="caption">
+            <div>
+              <p>Rotate around the X axis</p>
+            </div>
+
+            <code>rotateX(30deg)</code>
+          </div>
+        </article>
+
+        <article class="demo">
+          <div class="scene scene-2">
+            <div class="card card-2">
+              <img
+                src="images/tiger.jpg"
+                alt="Warm orange desert dunes beneath a peach sky"
+              />
+
+              <span class="card-number" aria-hidden="true"> 02 </span>
+            </div>
+          </div>
+
+          <div class="caption">
+            <div>
+              <p>Reverse the X-axis tilt</p>
+            </div>
+
+            <code>rotateX(-30deg)</code>
+          </div>
+        </article>
+
+        <article class="demo">
+          <div class="scene scene-3">
+            <div class="card card-3">
+              <img
+                src="images/tiger.jpg"
+                alt="Turquoise sea beside a pale coastal cliff"
+              />
+
+              <span class="card-number" aria-hidden="true"> 03 </span>
+            </div>
+          </div>
+
+          <div class="caption">
+            <div>
+              <p>Rotate around the Y axis</p>
+            </div>
+
+            <code>rotateY(30deg)</code>
+          </div>
+        </article>
+
+        <article class="demo">
+          <div class="scene scene-4">
+            <div class="card card-4">
+              <img
+                src="images/tiger.jpg"
+                alt="Layered green hills with a forest of pine trees"
+              />
+
+              <span class="card-number" aria-hidden="true"> 04 </span>
+            </div>
+          </div>
+
+          <div class="caption">
+            <div>
+              <p>Reverse the Y-axis tilt</p>
+            </div>
+
+            <code>rotateY(-30deg)</code>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
