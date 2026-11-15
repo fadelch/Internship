@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <title>JavaScript Final Assignment</title>
+  </head>
+  <body>
+    <h1 id="main-title">Products Management App</h1>
+    <div class="product" data-price="500">Laptop</div>
+    <div class="product" data-price="300">Phone</div>
+    <div class="product" data-price="100">Mouse</div>
+    <input type="text" id="productName" placeholder="Enter product name" />
+    <input type="number" id="productPrice" placeholder="Enter product price" />
+    <input type="text" id="productCategory" placeholder="Enter category" />
+    <input type="text" id="search_by_id" placeholder="Enter id" />
+    <br /><br />
+
+    <button onclick="drawProducts()">Show Products</button>
+
+    <button onclick="ShowProducts()">Show Products Using Map</button>
+    <button onclick="addProduct()">Add Product</button>
+    <button onclick="deleteLastProduct()">Delete Last Product</button>
+    <button onclick="calculateTotal()">Calculate Total</button>
+    <button onclick="showExpensiveProducts()">Show Expensive Products</button>
+    <button onclick="sortProductsByPrice()">Sort Products By Price</button>
+    <button onclick="checkProducts()">Check Products</button>
+    <button onclick="loadPosts()">Load Posts</button>
+    <button onclick="FindProduct()">Find Product By id</button>
+    <button onclick="findeven()">Find odd or even</button>
+    <button onclick="filterProducts('electronics')">Show Electronics</button>
+
+    <button onclick="filterProducts('accessories')">Show Accessories</button>
+
+    <br /><br />
+
+    <button onclick="openFacebook()">Open Facebook</button>
+    <button onclick="closeFacebook()">Close Facebook</button>
+    <button onclick="showScreenInfo()">Show Screen Info</button>
+    <button onclick="goToGoogle()">Go To Google</button>
+
+    <br /><br />
+
+    <button onclick="startTimeout()">Start Timeout</button>
+    <button onclick="stopTimeout()">Stop Timeout</button>
+    <button onclick="startCounter()">Start Counter</button>
+    <button onclick="stopCounter()">Stop Counter</button>
+
+    <h2 id="counter">0</h2>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
